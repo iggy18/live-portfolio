@@ -1,14 +1,16 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
 {% block content %}
-<div class="container-fluid">
-    <img class="img-fluid" src="{{project.screenshot.url}}">
+<div class="container center-box">
+<a href="{% url 'portfolio'%}"> <<< oops. go back!</a>
+    <img class="img-fluid detail-image" src="{{project.screenshot.url}}">
     <h1 class="center">{{project.name}}</h1>
-    <h1 class="center">{{project.language}}</h1>
-    <h2>{{project.long_description}}</h2>
     <a href="{{project.live_url}}">live url</a>
     <a href="{{project.github_url}}">see the code on GitHub</a>
     <a href="{{project.video_demo_url}}">watch it in action</a>
+    <h1 class="center">{{project.language}}</h1>
+    <h2>{{project.long_description}}</h2>
+    <a href="{% url 'portfolio'%}"> check out another project! >>></a>
 </div>
 
 {% endblock %}

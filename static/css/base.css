@@ -7,9 +7,80 @@ img{
 }
 
 .container{
+    margin: 1.5vw;
+    width: 100%;
     border: 1px solid black;
 }
 
 .col{
     border: 1px solid black;
+}
+
+.social {
+    font-size: 1.5vw;
+}
+
+.fa{
+    padding: 8px;
+    width: 2.5vw;
+    text-align: center;
+    text-decoration: none;
+    transition: 2s ease-in-out;
+    border-radius: 50%;
+}
+
+.fa-youtube{
+    background-color: #FF0000;
+    color: white;
+}
+
+.fa-linkedin{
+    background-color: #0077b5;
+    color: white;
+}
+
+.fa-instagram{
+    background-color: #f77737;
+    color: white;
+}
+
+.fa-github{
+    background-color: #6e5494;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.center-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-item {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vw;
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detail-image{
+    width: 90%;
+    border-radius:15px;
 }
