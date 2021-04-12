@@ -1,0 +1,15 @@
+img{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    border: 1px solid black;
+}
+
+.col{
+    border: 1px solid black;
+}
