@@ -18,9 +18,9 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
                 {% for project in projects %}
-                    <div class="carousel-item active">
+                    <div class="carousel-item {% if forloop.first %} active {% endif %}">
                         <img class="d-block w-100" src="{{project.screenshot.url}}">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>{{project.name}}</h5>
@@ -57,8 +57,26 @@
 <!--footer section-->
 <div class="container">
     <div class="row">
-        <div class="col-sm">
-
+        <div class="container col-sm">
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+        </div>
+        <div class="container col-sm">
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+        </div>
+        <div class="container col-sm">
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
+            <p>email:</p>
         </div>
     </div>
 </div>

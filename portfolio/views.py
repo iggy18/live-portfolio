@@ -3,7 +3,9 @@ from .models import Project
 from django.views.generic import DetailView
 
 def portfolio(request):
-    return render(request, 'portfolio/home.html')
+    projects = Project.objects.all()
+    context = {"projects": projects}
+    return render(request, 'portfolio/home.html', context)
 
 class DetailView(DetailView):
     template_name = 'portfolio/detail.html'
