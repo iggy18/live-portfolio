@@ -17,7 +17,7 @@
         </div>
     </div>
     <h1 class="center">{{project.language}}</h1>
-    <h2>{{project.long_description}}</h2>
+    <h2>{{project.long_description|safe}}</h2>
     <a class="light-text" href="{% url 'portfolio'%}"> check out another project! >>></a>
 </div>
 
