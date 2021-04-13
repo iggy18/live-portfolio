@@ -5,14 +5,14 @@
 <div class="hero">
     <img src="{% static 'images/scooter.jpg' %}">
     <section class="centered-overlay">
-        <h1>Seth Mcfeeters</h1>
-        <h2>Software Developer</h2>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        <h1 class="hero-title lobster">Seth Mcfeeters</h1>
+        <h2 class="hero-sub lobster">Software Developer</h2>
+        <p class="chevron fadeinandbounce"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
     </section>
 </div>
 
 <!--Pojects section-->
-<h1 class="center">What I've Built</h1>
+<h1 class="project-head abril center light-text">What I've Built</h1>
 <div class="container">
     {% for project in projects %}
         {% if forloop.counter|divisibleby:2 == 0 %}
@@ -21,9 +21,11 @@
                     <img class="img-fluid" src="{{project.screenshot.url}}">
                 </div>
                 <div class="col-md">
-                    <h1 class="center">{{project.name}}</h1>
-                    <h4>{{project.short_description}}</h4>
-                    <h5>Built with: {{project.language}}</h5>
+                    <h1 class="center light-text lobster">{{project.name}}</h1>
+                    <div class="group">
+                        <h4 class="center light-text abril">{{project.short_description}}</h4>
+                        <h5 class="center mid-text abril">Built with: {{project.language}}</h5>
+                    </div>
                     <div class="center-box">
                         <a class="btn btn-outline-secondary" href="{% url 'detail' project.pk %}">details</a>
                     </div>
@@ -32,11 +34,13 @@
         {% else %}
             <div class="row project-item">
                 <div class="col-md">
-                    <h1 class="center">{{project.name}}</h1>
-                    <h4>{{project.short_description}}</h4>
-                    <h5>Built with: {{project.language}}</h5>
+                    <h1 class="center light-text lobster">{{project.name}}</h1>
+                    <div class="group">
+                        <h4 class="center light-text abril">{{project.short_description}}</h4>
+                        <h5 class="center mid-text abril">Built with: {{project.language}}</h5>
+                    </div>
                     <div class="center-box">
-                        <a class="btn btn btn-outline-secondary" href="{% url 'detail' project.pk %}">details</a>
+                        <a class="btn btn-outline-secondary" href="{% url 'detail' project.pk %}">details</a>
                     </div> 
                 </div>
                 <div class="col-md">
@@ -48,32 +52,34 @@
 </div>
 
 <!--about me section-->
-<div class="container">
+<div class="me container-fluid">
     <div class="row">
         <div class="col-md">
             <img class="img-fluid" src="{% static 'images/me.jpeg' %}">
         </div>
         <div class="col-md">
-            <h1 class="center">About Me</h1>
-            <p>this is some text text that is blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah</p>
+            <h1 class="center light-text lobster">About Me</h1>
+            <p class="light-text orelega me-text">Hi there! Thanks for checking out my portfolio. I'm Seth. I'm a full stack web developer specializing in Python, JavaScript, Django, and React. I was working on board the Victoria Clipper V (A passenger ferry that runs from Seattle, WA U.S. to Victoria in British Columbia Canada) when COVID-19 shut down the route between countries. For a few months I hoped I would be able to get back to work soon but as the pandemic carried on I began to work towards a long time dream of mine. I turned my lost job into an opportunity and became a software developer. I love it. I love making new things, and learning new things, and squashing bugs. it's like exercise for my brain. Coding has allowed me to make things that let people pursue their dreams and ideas, connect with like minded individuals, and create games of my own design. I work hard every day to be a better programmer.</p>
+            <p class="light-text orelega me-text">When I'm not programming I like to explore the PNW. I Hike, kayak, snowboard, take pictures along the way, and enjoy a good mountain summit sandwich. If I'm not outside I'm inside drawing with Procreate on my ipad, or building and ambient soundscape with my guitar and a looping pedal. I am a family person, though I do not have kids yet. I have a partner, and a one year old Irish WolfHound. I cherish the time I spend with them. They are the wind in my sails.</p>
         </div>
     </div>
 </div>
 
 <!--footer section-->
-<div class="container">
-    <div class="row">
+<div class="foot container-fluid">
+    <div class="row foot-row">
         <div class="list container col-sm">
+            <p class="center light-text">Connect with me on:</p>
             <p class="center social"><a href="https://www.linkedin.com/in/seth-mcfeeters/" class="fa fa-linkedin"></a></p>
             <p class="center social"><a href="https://www.youtube.com/channel/UCP_QafQiqE7slKe7dbmA68w" class="fa fa-youtube"></a></p>
             <p class="center social"><a href="https://github.com/iggy18" class="fa fa-github"></a></p>
             <p class="center social"><a href="https://www.instagram.com/iggy18/" class="fa fa-instagram"></a></p>
         </div>
         <div class="container col-sm">
-            <p class="center">contact info:</p>
-            <p class="center">email: <a href = "mailto: opportunity.sethmcfeeters@gmail.com">opportunity.sethmcfeeters@gmail.com</p></a>
-            <p class="center">phone: 1(662)321-1436</p>
-            <p class="center">location: Seattle, Washington</p>
+            <p class="center light-text"><contact info:</p>
+            <p class="center light-text">email: <a class="light-text" href="mailto: opportunity.sethmcfeeters@gmail.com">opportunity.sethmcfeeters@gmail.com</p></a>
+            <p class="center light-text">phone: 1(662)321-1436</p>
+            <p class="center light-text">location: Seattle, Washington</p>
         </div>
         <div class="container col-sm">
             <p class="center">email:</p>
