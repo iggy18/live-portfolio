@@ -2,15 +2,23 @@
 {% load static %}
 {% block content %}
 <div class="container center-box">
-<a href="{% url 'portfolio'%}"> <<< oops. go back!</a>
+<a class="light-text" href="{% url 'portfolio'%}"> <<< oops. go back!</a>
     <img class="img-fluid detail-image" src="{{project.screenshot.url}}">
     <h1 class="center">{{project.name}}</h1>
-    <a href="{{project.live_url}}">live url</a>
-    <a href="{{project.github_url}}">see the code on GitHub</a>
-    <a href="{{project.video_demo_url}}">watch it in action</a>
+    <div class="row">
+        <div class="col-md">
+            <a href="{{project.live_url}}" target="_blank" rel="noopener noreferrer">Check out the real thing</a>
+        </div>
+        <div class="col-md">
+            <a href="{{project.github_url}}" target="_blank" rel="noopener noreferrer">See the code on GitHub</a>
+        </div>
+        <div class="col-md">
+            <a href="{{project.video_demo_url}}" target="_blank" rel="noopener noreferrer">Watch video demonstration</a>
+        </div>
+    </div>
     <h1 class="center">{{project.language}}</h1>
     <h2>{{project.long_description}}</h2>
-    <a href="{% url 'portfolio'%}"> check out another project! >>></a>
+    <a class="light-text" href="{% url 'portfolio'%}"> check out another project! >>></a>
 </div>
 
 {% endblock %}
