@@ -12,5 +12,5 @@ class Project(models.Model):
     video_demo_url = models.URLField(blank=True)
 
     def get_absolute_url(self):
-        return f'/{self.pk}'
+        return f'/detail/{self.pk}'
 
