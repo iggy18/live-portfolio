@@ -6,8 +6,6 @@ font-family: 'Orelega One', cursive;
 font-family: 'Amatic SC', cursive;
 */
 @import "compass/css3";
-@import url(./base.css);
-@import url(./color.css);
 
 
 @keyframes JustFadeIn{
