@@ -1,12 +1,13 @@
-@import url(base.css);
-@import url(color.css);
 
 /*
 font-family: 'Abril Fatface', cursive;
 font-family: 'Lobster', cursive;
 font-family: 'Orelega One', cursive;
 */
-@import "compass/css3";
+
+@import url(base.css);
+@import url(color.css);
+
 
 @keyframes JustFadeIn{
 	0%{
