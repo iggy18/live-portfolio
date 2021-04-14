@@ -3,10 +3,11 @@
 font-family: 'Abril Fatface', cursive;
 font-family: 'Lobster', cursive;
 font-family: 'Orelega One', cursive;
+font-family: 'Amatic SC', cursive;
 */
-
-@import url(base.css);
-@import url(color.css);
+@import "compass/css3";
+@import url(./base.css);
+@import url(./color.css);
 
 
 @keyframes JustFadeIn{
@@ -49,6 +50,10 @@ font-family: 'Orelega One', cursive;
     font-family: 'Orelega One', cursive;
 }
 
+.amatic{
+    font-family: 'Amatic SC', cursive;
+}
+
 .top{
     align-self: flex-start;
 }
@@ -87,11 +92,15 @@ font-family: 'Orelega One', cursive;
 .me{
     min-height: 65vh;
     padding: 2vw;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 
 .me-text{
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+}
+
+.me-title{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    font-size: 4vw;
 }
 
 .foot{
