@@ -3,7 +3,7 @@
 {% block content%}
 <!--header section-->
 <div class="hero">
-    <img src="{% static 'images/scooter.jpg' %}">
+    <img src="{% static 'images/scooter.jpg' %}" alt="cool guy with long hair on classic scooter">
     <section class="centered-overlay">
         <h1 class="hero-title lobster">Seth Mcfeeters</h1>
         <h2 class="hero-sub lobster">Software Developer</h2>
@@ -18,13 +18,13 @@
         {% if forloop.counter|divisibleby:2 == 0 %}
             <div class="row project-item">
                 <div class="col-md">
-                    <img class="img-fluid" src="{{project.screenshot.url}}">
+                    <img class="img-fluid" src="{{project.screenshot.url|safe}}" alt="screenshot of project">
                 </div>
                 <div class="col-md">
                     <h1 class="center light-text lobster">{{project.name}}</h1>
                     <div class="group">
-                        <h4 class="center light-text abril">{{project.short_description}}</h4>
-                        <h5 class="center mid-text abril">Built with: {{project.language}}</h5>
+                        <h3 class="center light-text abril">{{project.short_description}}</h3>
+                        <h4 class="center mid-text abril">Built with: {{project.language}}</h4>
                     </div>
                     <div class="center-box">
                         <a class="btn btn-outline-secondary" href="{% url 'detail' project.pk %}">details</a>
@@ -36,15 +36,15 @@
                 <div class="col-md">
                     <h1 class="center light-text lobster">{{project.name}}</h1>
                     <div class="group">
-                        <h4 class="center light-text abril">{{project.short_description}}</h4>
-                        <h5 class="center mid-text abril">Built with: {{project.language}}</h5>
+                        <h5 class="center light-text abril">{{project.short_description}}</h5>
+                        <h6 class="center mid-text abril">Built with: {{project.language}}</h6>
                     </div>
                     <div class="center-box">
                         <a class="btn btn-outline-secondary" href="{% url 'detail' project.pk %}">details</a>
                     </div> 
                 </div>
                 <div class="col-md">
-                    <img class="img-fluid" src="{{project.screenshot.url}}">
+                    <img class="img-fluid" src="{{project.screenshot.url|safe}}" alt="screenshot of project"> 
                 </div>
             </div>
         {% endif %}
@@ -55,10 +55,10 @@
 <div class="me container-fluid">
     <div class="row">
         <div class="col-md">
-            <img class="img-fluid" src="{% static 'images/me.jpeg' %}">
+            <img class="img-fluid" src="{% static 'images/me.jpeg' %}" alt="magnificent human specimen sitting on rock with mt rainier in the background">
         </div>
         <div class="col-md">
-            <h1 class="center light-text lobster">About Me</h1>
+            <h6 class="center light-text lobster">About Me</h6>
             <p class="light-text orelega me-text">Hi there! Thanks for checking out my portfolio. I'm Seth. I'm a full stack web developer specializing in Python, JavaScript, Django, and React. I was working on board the Victoria Clipper V (A passenger ferry that runs from Seattle, WA U.S. to Victoria in British Columbia Canada) when COVID-19 shut down the route between countries. For a few months I hoped I would be able to get back to work soon but as the pandemic carried on I began to work towards a long time dream of mine. I turned my lost job into an opportunity and became a software developer. I love it. I love making new things, and learning new things, and squashing bugs. it's like exercise for my brain. Coding has allowed me to make things that let people pursue their dreams and ideas, connect with like minded individuals, and create games of my own design. I work hard every day to be a better programmer.</p>
             <p class="light-text orelega me-text">When I'm not programming I like to explore the PNW. I Hike, kayak, snowboard, take pictures along the way, and enjoy a good mountain summit sandwich. If I'm not outside I'm inside drawing with Procreate on my ipad, or building and ambient soundscape with my guitar and a looping pedal. I am a family person, though I do not have kids yet. I have a partner, and a one year old Irish WolfHound. I cherish the time I spend with them. They are the wind in my sails.</p>
         </div>
