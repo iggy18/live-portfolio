@@ -1,29 +1,40 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
 {% block content %}
-<a class="light-text back" href="{% url 'portfolio'%}"> <<< oops. go back!</a>
+<!--project name and video content-->
+<a class="light-text back" href="{% url 'bookmark'%}#project-section"> <<< back to projects</a>
 <div class="container center-box">
-    <h1 class="center light-text lobster t-shadow">{{project.name}}</h1>
-    <div class="embed-responsive embed-responsive-16by9">
+    <h1 class="center light-text lobster t-shadow bigly">{{project.name}}</h1>
+    <div class="responsive-wrapper embed-responsive-16by9">
         <iframe class="embed-responsive-item" width="1280" height="720" src="{{project.video_demo_url}}" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="detail-box">
-        <h2 class="center light-text t-shadow">Built with: {{project.language}}</h2>
-        <h3 class="dark-text">{{project.long_description|safe}}</h3>
+</div>
+
+<!--visit buttons-->
+<div class="container">
+    <div class="row large-icon light-text visit-buttons">
+    <section class="col-md">
+        </section>
+        <section class="col-md">
+                <a class="visit" href="{{project.live_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-user"> visit the site</i></a>
+        </section>
+        <section class="col-md">
+        </section>
+        <section class="col-md">
+                <a class="visit" href="{{project.github_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-search"> see the code</i></a>
+        </section>
+        <section class="col-md">
+        </section>
     </div>
 </div>
-<div class="foot">
-    <div class="row large-icon light-text">
 
-        <section class="col-lg left">
-                <a href="{{project.live_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-user"> visit the site</i></a>
-        </section>
-
-        <section class="col-lg right">
-                <a href="{{project.github_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-search"> see the code</i></a>
-        </section>
-
+<!--long project description-->
+<div class="container center-box">
+    <div class="detail-box">
+        <h2 class="center light-text t-shadow">Built with: {{project.language}}</h2>
+        <h3 class="dark-text description-box">{{project.long_description|safe}}</h3>
     </div>
-    <a class="light-text center-item" href="{% url 'portfolio'%}"> check out another project! >>></a>
+</div class="another">
+    <a class="light-text center-item" href="{%url 'bookmark' %}#project-section"> check out another project! >>></a>
 </div>
 {% endblock %}

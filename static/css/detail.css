@@ -17,6 +17,18 @@ font-family: 'Amatic SC', cursive;
 	}
 }
 
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 @keyframes bounce{
 	0%, 20%, 50%, 80%, 100% {
     transform:translateY(0);
@@ -129,4 +141,47 @@ font-family: 'Amatic SC', cursive;
 .detail-box{
     width: 100%;
     margin: 15px;
+}
+
+.bigly{
+    font-size: 6vw;
+}
+
+.detail-box{
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 19px 16px 30px 0px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 19px 16px 30px 0px rgba(0,0,0,0.62);
+    -moz-box-shadow: 19px 16px 30px 0px rgba(0,0,0,0.62);
+}
+
+.description-box{
+    margin: 2vw;
+    border-radius: 12px;
+    padding: 3vw;
+}
+
+.visit{
+    border-radius: 12px;
+    box-shadow: 19px 16px 30px 0px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 19px 16px 30px 0px rgba(0,0,0,0.62);
+    -moz-box-shadow: 19px 16px 30px 0px rgba(0,0,0,0.62);
+}
+
+.another{
+    margin-bottom: 20px;
+}
+
+.responsive-wrapper{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 15px;
+}
+
+.responsive-wrapper iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
