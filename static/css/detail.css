@@ -79,6 +79,10 @@ font-family: 'Amatic SC', cursive;
     animation: JustFadeIn 2s ease-in 1s both;
 }
 
+.t-shadow {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
 .chevron {
     font-size: 2vw;
 }
@@ -104,8 +108,25 @@ font-family: 'Amatic SC', cursive;
 .foot{
     padding-top: 2vw;
     min-height: 35vh;
+    width: 100%;
 }
 
 .grow {
     flex-grow: 1;
+}
+
+.large-icon {
+    font-size: 2.4vw;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+.fa-user, .fa-search {
+    width: 100%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.detail-box{
+    width: 100%;
+    margin: 15px;
 }
