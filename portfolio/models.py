@@ -11,6 +11,10 @@ class Project(models.Model):
     github_url = models.URLField(blank=True)
     video_demo_url = models.URLField(blank=True)
 
+    def __str__(self):
+        return self.name
+
+
     def get_absolute_url(self):
         return f'/detail/{self.pk}'
 

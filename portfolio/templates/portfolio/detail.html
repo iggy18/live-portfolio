@@ -1,24 +1,29 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
 {% block content %}
+<a class="light-text back" href="{% url 'portfolio'%}"> <<< oops. go back!</a>
 <div class="container center-box">
-<a class="light-text" href="{% url 'portfolio'%}"> <<< oops. go back!</a>
-    <img class="img-fluid detail-image" src="{{project.screenshot.url}}">
-    <h1 class="center">{{project.name}}</h1>
-    <div class="row">
-        <div class="col-md">
-            <a href="{{project.live_url}}" target="_blank" rel="noopener noreferrer">Check out the real thing</a>
-        </div>
-        <div class="col-md">
-            <a href="{{project.github_url}}" target="_blank" rel="noopener noreferrer">See the code on GitHub</a>
-        </div>
-        <div class="col-md">
-            <a href="{{project.video_demo_url}}" target="_blank" rel="noopener noreferrer">Watch video demonstration</a>
-        </div>
+    <h1 class="center light-text lobster t-shadow">{{project.name}}</h1>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="1280" height="720" src="{{project.video_demo_url}}" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <h2 class="center">{{project.language}}</h2>
-    <h3>{{project.long_description|safe}}</h3>
-    <a class="light-text" href="{% url 'portfolio'%}"> check out another project! >>></a>
+    <div class="detail-box">
+        <h2 class="center light-text t-shadow">Built with: {{project.language}}</h2>
+        <h3 class="dark-text">{{project.long_description|safe}}</h3>
+    </div>
 </div>
+<div class="foot">
+    <div class="row large-icon light-text">
 
+        <section class="col-lg left">
+                <a href="{{project.live_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-user"> visit the site</i></a>
+        </section>
+
+        <section class="col-lg right">
+                <a href="{{project.github_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-search"> see the code</i></a>
+        </section>
+
+    </div>
+    <a class="light-text center-item" href="{% url 'portfolio'%}"> check out another project! >>></a>
+</div>
 {% endblock %}
