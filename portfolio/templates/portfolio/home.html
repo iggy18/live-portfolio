@@ -6,7 +6,7 @@
     <img src="{% static 'images/scooter.jpg' %}" alt="cool guy with long hair on classic scooter">
     <section class="centered-overlay">
         <h1 class="hero-title light-text lobster">Seth Mcfeeters</h1>
-        <h2 class="hero-sub light-text"> Software Developer</h2>
+        <h2 class="hero-sub light-text lobster"> Software Developer</h2>
         <a class="light-text" href="#project-section"><p class="chevron fadeinandbounce"><i class="fa fa-chevron-down" aria-hidden="true"></i></p></a>
     </section>
 </div>
@@ -18,10 +18,10 @@
         {% if forloop.counter|divisibleby:2 == 0 %}
             <div class="row project-item">
                 <div class="col-md">
-                    <img class="img-fluid" src="{{project.screenshot.url|safe}}" alt="screenshot of project">
+                    <img class="img-fluid" src="{{project.screenshot.url}}" alt="screenshot of project">
                 </div class="row">
                 <div class="col-md">
-                    <h1 class="center light-text lobster">{{project.name}}</h1>
+                    <h1 class="center light-text lobster t-shadow">{{project.name}}</h1>
                     <div class="group">
                         <h3 class="center light-text abril">{{project.short_description}}</h3>
                         <h4 class="center dark-text abril">Built with: {{project.language}}</h4>
@@ -34,7 +34,7 @@
         {% else %}
             <div class="row project-item">
                 <div class="col-md">
-                    <h1 class="center light-text lobster">{{project.name}}</h1>
+                    <h1 class="center light-text lobster t-shadow">{{project.name}}</h1>
                     <div class="group">
                         <h5 class="center light-text abril">{{project.short_description}}</h5>
                         <h6 class="center dark-text abril">Built with: {{project.language}}</h6>
@@ -44,7 +44,7 @@
                     </div> 
                 </div>
                 <div class="col-md">
-                    <img class="img-fluid" src="{{project.screenshot.url|safe}}" alt="screenshot of project"> 
+                    <img class="img-fluid" src="{{project.screenshot.url}}" alt="screenshot of project"> 
                 </div>
             </div>
         {% endif %}
@@ -61,28 +61,6 @@
             <h6 class="center light-text lobster me-title">About Me</h6>
             <p class="light-text me-text">Hi there! Thanks for checking out my portfolio. I'm Seth. I'm a full stack web developer specializing in Python, JavaScript, Django, and React. I was working on board the Victoria Clipper V (A passenger ferry that runs from Seattle, WA U.S. to Victoria in British Columbia Canada) when COVID-19 shut down the route between countries. For a few months I hoped I would be able to get back to work soon but as the pandemic carried on I began to work towards a long time dream of mine. I turned my lost job into an opportunity and became a software developer. I love it. I love making new things, and learning new things, and squashing bugs. it's like exercise for my brain. Coding has allowed me to make things that let people pursue their dreams and ideas, connect with like minded individuals, and create games of my own design. I work hard every day to be a better programmer.</p>
             <p class="light-text me-text">When I'm not programming I like to explore the PNW. I Hike, kayak, snowboard, take pictures along the way, and enjoy a good mountain summit sandwich. If I'm not outside I'm inside drawing with Procreate on my ipad, or building and ambient soundscape with my guitar and a looping pedal. I am a family person, though I do not have kids yet. I have a partner, and a one year old Irish WolfHound. I cherish the time I spend with them. They are the wind in my sails.</p>
-        </div>
-    </div>
-</div>
-
-<!--footer section-->
-<div class="foot container-fluid">
-    <div class="row foot-row">
-        <div class="list container col-sm">
-            <p class="center light-text">Connect with me on:</p>
-            <p class="center social"><a href="https://www.linkedin.com/in/seth-mcfeeters/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a></p>
-            <p class="center social"><a href="https://www.youtube.com/channel/UCP_QafQiqE7slKe7dbmA68w" target="_blank" rel="noopener noreferrer" class="fa fa-youtube"></a></p>
-            <p class="center social"><a href="https://github.com/iggy18" target="_blank" rel="noopener noreferrer" class="fa fa-github"></a></p>
-            <p class="center social"><a href="https://www.instagram.com/iggy18/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a></p>
-        </div>
-        <div class="container col-sm">
-            <p class="center light-text"><contact info:</p>
-            <p class="center light-text">email: <a class="light-text" href="mailto: opportunity.sethmcfeeters@gmail.com">opportunity.sethmcfeeters@gmail.com</p></a>
-            <p class="center light-text">phone: 1(662)321-1436</p>
-            <p class="center light-text">location: Seattle, Washington</p>
-        </div>
-        <div class="container col-sm">
-            <iframe width="426" height="240" src="https://www.youtube.com/embed/iTgmAlQzDt4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </div>

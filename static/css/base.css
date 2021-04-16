@@ -54,6 +54,7 @@ a:active {
     transition: 2s ease-in-out;
     border-radius: 50%;
 }
+
 .back{
     float: left;
     position: absolute;
