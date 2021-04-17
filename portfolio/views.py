@@ -3,7 +3,7 @@ from .models import Project
 from django.views.generic import DetailView
 
 def portfolio(request):
-    projects = Project.objects.all()[::-1]
+    projects = Project.objects.all()
     context = {"projects": projects}
     return render(request, 'portfolio/home.html', context)
 
