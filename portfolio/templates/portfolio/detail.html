@@ -32,8 +32,11 @@
 <div class="container center-box">
     <div class="detail-box">
         <h2 class="center light-text t-shadow">Built with: {{project.language}}</h2>
-        <h3 class="dark-text description-box">{{project.long_description|safe}}</h3>
+        <div class="description-box dark-text">
+            <h3>{{project.long_description|safe}}</h3>
+        </div>
     </div>
+</div>
 </div class="another">
     <a class="light-text center-item" href="{%url 'bookmark' %}#project-section"> check out another project! >>></a>
 </div>
