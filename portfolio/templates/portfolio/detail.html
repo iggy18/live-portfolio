@@ -12,18 +12,18 @@
 
 <!--visit buttons-->
 <div class="container">
-    <div class="row large-icon light-text visit-buttons">
-    <section class="col-md">
+    <div class="row large-icon light-text mobile-row">
+        <section class="col-md mobile-hide">
         </section>
-        <section class="col-md">
+        <section class="col-md visit-col">
                 <a class="visit" href="{{project.live_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-user"> visit the site</i></a>
         </section>
-        <section class="col-md">
+        <section class="col-md mobile-hide">
         </section>
-        <section class="col-md">
+        <section class="col-md visit-col">
                 <a class="visit" href="{{project.github_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa fa-search"> see the code</i></a>
         </section>
-        <section class="col-md">
+        <section class="col-md mobile-hide">
         </section>
     </div>
 </div>
@@ -31,7 +31,7 @@
 <!--long project description-->
 <div class="container center-box">
     <div class="detail-box">
-        <h2 class="center light-text t-shadow">Built with: {{project.language}}</h2>
+        <h2 class="center light-text t-shadow abril">Built with: {{project.language}}</h2>
         <div class="description-box dark-text">
             <h3>{{project.long_description|safe}}</h3>
         </div>
