@@ -185,3 +185,81 @@ font-family: 'Amatic SC', cursive;
     width: 100%;
     height: 100%;
 }
+
+
+@media (max-width:768px){
+    .flip{
+        flex-direction: column-reverse;
+    }
+    .group{
+        margin: 0;
+    }
+
+    .foot-row{
+        flex-direction: column;
+    }
+
+    .me-title{
+        font-size: 5vw;
+    }
+
+    .me-text{
+        font-size: 3.2vw;
+    }
+
+    .line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .line p{
+        font-size: 5vw;
+    }
+    .fa{
+        padding: 10px 23px 10px 23px;
+    }
+
+    .fa-youtube::before{
+        position: relative;
+        margin-left: -2vw;
+    }
+
+    .fa-github::before{
+        position: relative;
+        margin-left: -2vw;
+    }
+
+    .fa-linkedin::before{
+        position: relative;
+        margin-left: -2vw;
+    }
+
+    .fa-instagram::before{
+        position: relative;
+        margin-left: -2vw;
+    }
+
+    .visit-buttons{
+        min-height: 12vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+
+    .mobile-row{
+        flex-wrap: nowrap !important;
+        width: 51% !important;
+    }
+
+    .large-icon{
+        font-size: 4vw;
+    }
+
+    .back{
+        font-size: 2vw;
+    }
+}
