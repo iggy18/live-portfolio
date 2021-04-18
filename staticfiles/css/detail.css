@@ -183,7 +183,6 @@ font-family: 'Amatic SC', cursive;
     height: 100%;
 }
 
-
 @media (max-width:768px){
     .flip{
         flex-direction: column-reverse;
@@ -201,7 +200,7 @@ font-family: 'Amatic SC', cursive;
     }
 
     .me-text{
-        font-size: 3.2vw;
+        font-size: 3.5vw;
     }
 
     .line{

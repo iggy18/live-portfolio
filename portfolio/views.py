@@ -4,7 +4,7 @@ from django.views.generic import DetailView
 from django.conf import settings
 
 def portfolio(request):
-    projects = Project.objects.all()
+    projects = Project.objects.all()[::-1]
     context = {"projects": projects}
     return render(request, 'portfolio/home.html', context)
 

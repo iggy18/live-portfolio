@@ -18,7 +18,7 @@
         {% if forloop.counter|divisibleby:2 == 0 %}
             <div class="row project-item">
                 <div class="col-md">
-                    <img class="img-fluid" src="{{project.screenshot.url}}" alt="screenshot of project">
+                    <img class="img-fluid" src="{{project.screenshot}}" alt="screenshot of project">
                 </div class="row">
                 <div class="col-md">
                     <h1 class="center light-text lobster t-shadow">{{project.name}}</h1>
@@ -44,7 +44,7 @@
                     </div> 
                 </div>
                 <div class="col-md">
-                    <img class="img-fluid" src="{{project.screenshot.url}}" alt="screenshot of project"> 
+                    <img class="img-fluid" src="{{project.screenshot}}" alt="screenshot of project"> 
                 </div>
             </div>
         {% endif %}
