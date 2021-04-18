@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+        <p class="display-1 amatic light-text absolute"> There is nothing here but a giant octopus. If you think something other than a giant octopus should be here I'd love to hear about it. </p>
+        <a class="display-3 light-text lobster .animate-flicker center" href="{% url 'portfolio'%}"> Return to normality.</a>
+        <img src="{% static 'images/404.png' %}"/>
+</div>
+{% endblock %}
