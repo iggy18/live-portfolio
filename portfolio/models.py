@@ -2,7 +2,7 @@ from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 
 class Project(models.Model):
-    screenshot = models.ImageField(blank=True)
+    screenshot = models.URLField(blank=True)
     language = models.CharField(max_length=255, blank=True)
     name = models.CharField(max_length=255, blank=True)
     short_description = models.CharField(max_length=255, blank=True)
