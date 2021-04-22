@@ -36,10 +36,6 @@
     background-color: #264653ff;
 }
 
-.centered-overlay {
-    background-color: rgba(0, 0, 0, 0.418)
-}
-
 .detail-box{
     background-color: #f4a261ff;
 }
@@ -73,8 +69,4 @@
 
 .error-button{
     background-color: #2a9d8fff;
-}
-
-.back{
-    background-color: #fefae0ff;
 }

@@ -8,6 +8,16 @@
 
 */
 
+.outline{
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
 .bright-text {
     color: #e9c46aff;
 }
@@ -34,10 +44,6 @@
 
 .foot{
     background-color: #264653ff;
-}
-
-.centered-overlay {
-    background-color: rgba(0, 0, 0, 0.418)
 }
 
 .detail-box{
@@ -73,8 +79,4 @@
 
 .error-button{
     background-color: #2a9d8fff;
-}
-
-.back{
-    background-color: #fefae0ff;
 }
