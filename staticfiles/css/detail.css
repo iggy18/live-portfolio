@@ -187,6 +187,10 @@ font-family: 'Amatic SC', cursive;
     height: 100%;
 }
 
+.octopus{
+    position: relative;
+}
+
 @media (max-width:768px){
     .flip{
         flex-direction: column-reverse;
