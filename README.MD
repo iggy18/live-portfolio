@@ -1,0 +1,1 @@
+There is not much to read about here. This is just my professional portfolio. I'll update it from time to time to add projects I've been working on lego on cool new features I've learned to build. 
